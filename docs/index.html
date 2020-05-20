@@ -1,0 +1,129 @@
+<html>
+
+<head>
+<title>Layout Respnsivo com Css3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="small.css" />
+
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="medium.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1135px)" href="large.css" />
+
+<link rel="stylesheet" href="https://releases.flowplayer.org/7.2.7/skin/skin.css"> 	
+<script src="https://releases.flowplayer.org/7.2.7/flowplayer.min.js"></script>
+<script src="https://releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+
+<style>
+body, html{
+			margin:0;
+			padding:0;
+			background-color:#1C1C1C;
+}
+p { line-height: 0px; font-size: 12.7px; color: #283747; black; font-family: Yandex-UI-Icons-Private;
+}
+h { color:#212F3D; #17202A; #1e1e1e; #283747; #544; rgb(0, 0, 0); font-size:11.6px; 11.4px; 10.4px; 10.498px; 12.46px; font-family: Sitka Small; 
+} 
+h2 { line-height: 3px; color:#b40000; rgb(85, 26, 139); rgb(0, 0, 0); font-size: 15.5px; font-family: Sitka Small;
+}
+h1 { padding: 2px; color: #283747; #aaa; #151516; #3c161c; #1f1f1f; font-size: 12.4px; 12.7px; 12.6px; 11px; font-family: Yandex-UI-Icons-Private; Sitka Small; Yandex-UI-Icons-Private;
+}
+ 
+	.flowplayer .fp-engine {
+  object-fit: fill;
+}
+
+ .fp-fullscreen:before {
+  content: "\"; }
+
+	
+</style>
+
+</head>
+
+
+
+<body>
+  
+  <div class="MAIN">
+	
+	<div class="content">
+	
+	<div class="header"></div>
+	<div class="content-LEFT">
+	<div id="fp-thumbnails"></div>
+            <script>
+flowplayer("#fp-thumbnails", {
+    ratio: 9/16,
+    share: false,
+	splash: false,
+	live: true,
+	muted: true,
+	autoplay: true,
+	autoBuffering: true,
+	embed: false,
+	fullscreen: true,
+    hlsQualities: true,
+	poster: '',
+	height: 400,
+    width: 820,
+    clip: {
+        // configure thumbnails for this clip
+        thumbnails: {
+            template: "",
+            preload: true
+        },
+
+        sources: [
+            { type: "application/x-mpegurl",
+              src:  "https://live-oiplay.online.go.oi.com.br/live-cdn/foxsports.smil/manifest.m3u8?" },
+            { type: "video/mp4",
+              src:  "" }
+        ],
+		title: ""
+		
+    }
+});
+</script>			
+	</div>
+	
+	<div class="content-RIGHT">
+	<br><br>
+	<div class="box-right">
+	<li><li>
+	<a href="file:///C:/Users/pedro/Desktop/Oi%20+%20Playplus.html" "under" style="text-decoration:none" ><h2><b><span data-reactid="65">L.S.BROADCAST</span></b></h2></a>
+	
+	<li><li>
+	<h1><b><span data-reactid="65">LSB & FOX SPORTS </span></b></h1>
+	
+	</div>
+	<br><br>
+	<div class="box-right-2">
+	<h><b>Acompanhe ao vivo os canais FOX </b></h>
+	</div>
+	<li>
+    <li>
+	<li>
+	<b><a href="file:///C:/Users/pedro/Desktop/Oi%20+%20playplus/FOX.html" "under" style="text-decoration:none; color:#4B0082;" >FOX<a/></b>
+	<li>
+	<li>
+	<li>
+	<b><a href="file:///C:/Users/pedro/Desktop/Oi%20+%20playplus/FX.html" "under" style="text-decoration:none; color:#4B0082;" >FX<a/></b>
+    <li>
+	<li>
+	<li>
+	<b><a href="file:///C:/Users/pedro/Desktop/Oi%20+%20playplus/FOX%20%20Premium%201.html" "under" style="text-decoration:none; color:#4B0082;" >FOX PREMIUM 1<a/></b>
+    <li>
+	<li>
+	<li>
+	<b><a href="file:///C:/Users/pedro/Desktop/Oi%20+%20Playplus/FOX%20Sports%202.html" "under" style="text-decoration:none; color:#4B0082;">FOX SPORTS 2<a/></b> 
+	</div>
+	
+	<div class="footer"></div>
+		
+ </div>
+	
+  </div>  
+		
+</body>
+
+</html>
