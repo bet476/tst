@@ -46,3 +46,9 @@
 	border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+@media screen and (max-width: 700px) {
+			.content-RIGHT, .content-LEFT, .MAIN{
+				float: none;
+				width: 100%;
+				margin-right:0;
+}
