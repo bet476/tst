@@ -21,5 +21,15 @@
 <body>
   <video style="background-color: black" id="playerTV" controls="" height="360" width="545" data-viblast-key="042cb180-93ca-4e6a-aa74-8d757ec1ae6d" autoplay="true" data-viblast-src="https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8" src="blob:https://impd.org.br/3e0a1790-091e-4c12-ab07-b56dd2569604"></video>
   
+  <script>
+  $(document).ready(function(){
+            setTimeout(function() {
+                $('#slides').carousel({
+                    interval: 12000,
+                    pause: "hover"
+                })
+            }, 15000);
+        });
+    </script>
 </body>
 </html>
